@@ -33,7 +33,7 @@ namespace Proyecto_Entrevista.Controllers
             .ToArray();
         }
         
-        //End-point Post uwu         
+        //End-point Post uwu*
         [HttpPost(Name = "PostWeatherForecast")]
         public WeatherForecast Post(WeatherForecast weatherForecast)
         {
