@@ -19,7 +19,7 @@ namespace Proyecto_Entrevista.Controllers
         }
 
         //End-point Tipo Get uwu 
-        //Padre que se vea que hago push 
+        //Padre que se vea que hago push <3
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
