@@ -32,5 +32,18 @@ namespace Proyecto_Entrevista.Controllers
             })
             .ToArray();
         }
+        
+        //End-point Post uwu         
+        [HttpPost(Name = "PostWeatherForecast")]
+        public WeatherForecast Post(WeatherForecast weatherForecast)
+        {
+            return new WeatherForecast
+            {
+                Date = weatherForecast.Date,
+                TemperatureC = weatherForecast.TemperatureC,
+                Summary = weatherForecast.Summary,
+                MiFer = weatherForecast.MiFer
+            };
+        }
     }
 }
