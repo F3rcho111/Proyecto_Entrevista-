@@ -18,7 +18,8 @@ namespace Proyecto_Entrevista.Controllers
             _logger = logger;
         }
 
-        //End-point Tipo Get uwu Miau Guau 
+        //End-point Tipo Get uwu 
+        //Padre que se vea que hago push 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
