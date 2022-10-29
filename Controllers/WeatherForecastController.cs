@@ -37,14 +37,14 @@ namespace Proyecto_Entrevista.Controllers
 
         //End-point Post uwu*
         [HttpPost(Name = "PostWeatherForecast")]
-        public Estudiante Post(Estudiante weatherForecast)
+        public Estudiante Post(Estudiante estudiante)
         {
             return new Estudiante
             {
-                Name = "David",
-                Calificacion = 10,
-                Acreditado = true,
-                Age = 20
+                Name = estudiante.Name,
+                Calificacion = estudiante.Calificacion,
+                Acreditado = estudiante.Acreditado,
+                Age = estudiante.Age,
             };
         }
     }
