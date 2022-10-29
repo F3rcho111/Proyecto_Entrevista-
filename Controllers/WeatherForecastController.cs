@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Proyecto_Entrevista.Models;
 
 namespace Proyecto_Entrevista.Controllers
 {
@@ -33,17 +34,17 @@ namespace Proyecto_Entrevista.Controllers
             })
             .ToArray();
         }
-        
+
         //End-point Post uwu*
         [HttpPost(Name = "PostWeatherForecast")]
-        public WeatherForecast Post(WeatherForecast weatherForecast)
+        public Estudiante Post(Estudiante weatherForecast)
         {
-            return new WeatherForecast
+            return new Estudiante
             {
-                Date = weatherForecast.Date,
-                TemperatureC = weatherForecast.TemperatureC,
-                Summary = weatherForecast.Summary,
-                MiFer = weatherForecast.MiFer
+                Name = "David",
+                Calificacion = 10,
+                Acreditado = true,
+                Age = 20
             };
         }
     }

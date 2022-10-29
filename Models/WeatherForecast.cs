@@ -1,4 +1,4 @@
-namespace Proyecto_Entrevista
+namespace Proyecto_Entrevista.Models
 {
     public class WeatherForecast
     {
@@ -10,7 +10,7 @@ namespace Proyecto_Entrevista
 
         public string? Summary { get; set; }
 
-        public bool MiFer  { get; set; }
+        public bool MiFer { get; set; }
         public int Age { get; set; }
 
     }
