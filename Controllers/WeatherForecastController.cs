@@ -19,12 +19,13 @@ namespace Proyecto_Entrevista.Controllers
             _logger = logger;
         }
 
-        //End-point Tipo Get uwu 
-        //Padre que se vea que hago push <3
+        //End-point Tipo Get 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            
+            
+            var test = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now,
                 TemperatureC = Random.Shared.Next(-20, 55),
@@ -33,9 +34,11 @@ namespace Proyecto_Entrevista.Controllers
                 Age = 14
             })
             .ToArray();
+
+            return test;
         }
 
-        //End-point Post uwu*
+        //End-point Post
         [HttpPost(Name = "PostWeatherForecast")]
         public Estudiante Post(Estudiante estudiante)
         {
@@ -45,6 +48,7 @@ namespace Proyecto_Entrevista.Controllers
                 Calificacion = estudiante.Calificacion,
                 Acreditado = estudiante.Acreditado,
                 Age = estudiante.Age,
+                Grado = estudiante.Grado,   
             };
         }
     }
