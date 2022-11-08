@@ -45,11 +45,12 @@ namespace Proyecto_Entrevista.Controllers
             return new Estudiante
             {
                 Name = estudiante.Name,
-                Calificacion = estudiante.Calificacion,
+                Calificacion = 100,
                 Acreditado = estudiante.Acreditado,
                 Age = estudiante.Age,
-                Grado = estudiante.Grado,   
+                Grado = estudiante.Grado,
+                
             };
         }
     }
-}
+}   
